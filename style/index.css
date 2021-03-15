@@ -51,20 +51,21 @@ table {
 /* Reset above */
 
 /* Add CSS styling here */
- /*put a border around everything to see where it stops and starts*/
-* {
-	box-sizing:border-box;
+ /*put a border around everything to see where it stops and starts
+ */
+ * {
+	/* box-sizing:border-box;
 	border:1px solid grey;
-	max-width: 100%;
+	max-width: 100%; */
 	
-}
+} 
 
 body {
 	font-family: 'Barlow', sans-serif;
 	font-size: 62.5%;
 	line-height: 1.5;
 	text-align: center;
-	color:black;
+	color: #4f4f4f;
 	background-color: #d3c4be;
 }
 
@@ -77,35 +78,44 @@ h2{
 }
 h3{
     font-size:2.5rem;
-	display:flex;
+	position: relative;
+  	right: 50%;
+	
 
 }
-h4, .links {
+h3, .links {
 	font-size: 1.5rem ;
 	color: #374f37;
+	display: inline-block;
+
+
 }
 nav {
 	text-align: right;
-
-
-	
-	padding-right: 0;
+	padding-right: 5%;
 	margin-right: 0;
 
+
+}
+nav a {
+	text-decoration: none;
+	/* color: #4f4f4f */
+	color: #374f37;
 }
 header {
-	display: flex;
-	align-items: stretch;
-	position:fixed;
-	background-color: #9CAF88;
+
+	position:sticky;
+	top:5%;
 	opacity: .8;
 	width: 100%;
+	z-index: 999;
+	
+	
 }
 /* Header image */
 .top-title {
 	margin-top: 0;
 	padding-top: 0;
-
 	display: flex;
 	flex-direction: column;
 	
@@ -114,7 +124,7 @@ header {
  #top {
 	height:100vh;
 	width:90%;
-	background-image: url("/Photos/updatedFace.jpg");
+	background-image: url("/Photos/green-4754980.jpg");
 	margin: 5%;
 	background-size:cover;
 	background-repeat:no-repeat;
