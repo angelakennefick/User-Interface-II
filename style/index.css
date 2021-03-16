@@ -153,6 +153,19 @@ footer a {
 
 /* responsive-design */
 @media(max-width: 800px) {
+	h3 {
+		font-size: 1.5rem;
+	}
+	header nav {
+		margin-bottom: 10%;
+	}
+	#top {
+		height:60vh;
+	}
+	footer {
+		font-size: 1.5rem;
+	}
+
 }
 /* tablet above^ phone below */
 @media(max-width: 500px) {
@@ -181,7 +194,7 @@ footer a {
 		position: inherit;
 	}
 
-	 .more {
+	.more {
 		 visibility: hidden;
 	 }
 	.contact {
